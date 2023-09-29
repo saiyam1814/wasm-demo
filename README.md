@@ -24,7 +24,8 @@ HTTP path: /...
 ```
 
 ## Edit the file 
-``` vi wasmdemo/src/lib.rs 
+```
+vi wasmdemo/src/lib.rs 
 ```
 change this line `.body(Some("Hello, Kodekloud".into()))?)`
 
@@ -38,7 +39,7 @@ helm repo add kwasm http://kwasm.sh/kwasm-operator/
 helm install -n kwasm --create-namespace kwasm-operator kwasm/kwasm-operator
 ```
 ## Mark nodes to be able to run wasm workloads
-kubectl annotate node --all kwasm.sh/kwasm-node=true
+`kubectl annotate node --all kwasm.sh/kwasm-node=true`
 
 ## Create Dockerfile
 ```
