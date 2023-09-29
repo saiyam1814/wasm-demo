@@ -1,13 +1,15 @@
 # wasm-demo
 
 ## install spin(Mac)
+```
 brew tap fermyon/tap
 brew install fermyon/tap/spin
-
+```
 ## install spin Linux 
+```
 curl -fsSL https://developer.fermyon.com/downloads/install.sh | bash
 sudo mv spin /usr/local/bin/
-
+```
 
 ## create application 
 
