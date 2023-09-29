@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kodekloud-wasm
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kodekloud-wasm
+  template:
+    metadata:
+      labels:
+        app: kodekloud-wasm
+    spec:
+      nodeName: k3s-kk-wasm-72b3-d06b13-node-pool-61d4-riunz
+      runtimeClassName: wasmtime-spin
+      containers:
+        - name: kodekloud-wasm
+          image: saiyam911/kodekloud
+          command:
+            - /
+
